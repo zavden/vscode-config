@@ -1,0 +1,266 @@
+{
+    "[python]": {
+      "editor.formatOnType": true
+    },
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.tabSize": 2,
+    "editor.fontSize": 14,
+    "editor.mouseWheelZoom": true,
+    "json.schemas": [
+        
+        
+
+  
+    
+    ],
+    "excalidraw.theme": "dark",
+    // "vim.insertModeKeyBindings": [],
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+      }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+      },
+      {
+        "before": ["K"],
+        "commands": ["lineBreakInsert"],
+        "silent": true
+      },
+      {
+        "before": ["<leader>", "S"],
+        "after": ["<leader>", "<leader>", "<leader>", "b", "d", "w"]
+      },
+      {
+        "before": ["<leader>", "E"],
+        "commands": ["workbench.view.explorer"]
+      },
+      {
+        "before": ["s", "v"],
+        "commands": ["workbench.action.splitEditorRight"]
+      },
+      {
+        "before": ["<leader>","x"],
+        "commands": [":q"]
+      },
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+      "<C-a>": false,
+      "<C-f>": false
+    },
+  "editor.tokenColorCustomizations": {
+      "[Eva Dark Bold]": {
+        "textMateRules": [
+          {
+            "name": "Class definition",
+            "scope": "entity.name.type.class.python",
+            "settings": {
+              "foreground": "#0ED1D9",
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "name": "Class inherit",
+            "scope": "entity.other.inherited-class.python",
+            "settings": {
+              "foreground": "#0ED1D9",
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "name": "Class instanciated",
+            "scope": "entity.name.type.class",
+            "settings": {
+              "foreground": "#FFFFFF",
+              "fontStyle": "bold"
+            }
+          }
+        ]
+      },
+          "[Gruvbox Minor Dark Hard]": {
+              "textMateRules": [
+                  {
+                      "name": "Change colors comparison",
+                      "scope": "keyword.operator.comparison.python",
+                      "settings": {
+                          "foreground": "#db0000",
+                          "fontStyle": "bold"
+                      }
+                  },
+                  {
+                      "name": "Change colors assignment",
+                      "scope": "keyword.operator.assignment.python",
+                      "settings": {
+                          "foreground": "#db0000",
+                          "fontStyle": "bold"
+                      }
+                  },
+                  {
+                      "name": "Change colors assignment augmented",
+                      "scope": "keyword.operator.assignment.augmented.python",
+                      "settings": {
+                          "foreground": "#db0000",
+                          "fontStyle": "bold"
+                      }
+                  },
+                  {
+                      "name": "Change colors item-acces arguments",
+                      "scope": "meta.item-access.arguments.python",
+                      "settings": {
+                          "foreground": "#db0000",
+                      }
+                  },
+                  {
+                      "name": "Change colors parameter function python",
+                      "scope": "variable.parameter.function.python",
+                      "settings": {
+                          "foreground": "#F8BC2F",
+                          //fontStyle": "bold"
+                      }
+                  },
+                  {
+                      "name": "Change colors parameter function ",
+                      "scope": "variable.parameter",
+                      "settings": {
+                          "foreground": "#F8BC2F",
+                          //fontStyle": "bold"
+                      }
+                  },
+                  {
+                      "name": "Change colors operator arithmetic",
+                      "scope": "keyword.operator.arithmetic.python",
+                      "settings": {
+                          "foreground": "#ff6600",
+                          //fontStyle": "bold"
+                      }
+                  },
+                  {
+                      "name": "Change colors function-call",
+                      "scope": "meta.function-call.python",
+                      "settings": {
+                          "foreground": "#83a598",
+                          //fontStyle": "bold"
+                      }
+                  },
+                  {
+                      "name": "Change font weight self",
+                      "scope": "variable.parameter.function.language.special.self.python",
+                      "settings": {
+                          "fontStyle": "bold"
+                      }
+                  },
+                  {
+                      "name": "Change font weight class",
+                      "scope": "storage.type.class.python",
+                      "settings": {
+                          "fontStyle": "bold"
+                      }
+                  },
+                  {
+                      "name": "Change font weight function",
+                      "scope": "storage.type.function.python",
+                      "settings": {
+                          "fontStyle": "bold"
+                      }
+                  },
+                  {
+                      "name": "Change font weight 'for', 'while' and 'if' ",
+                      "scope": "keyword.control.flow.python",
+                      "settings": {
+                          "fontStyle": "bold"
+                      }
+                  },
+                  {
+                      "name": "Change font weight 'def' ",
+                      "scope": "storage.type.function.python",
+                      "settings": {
+                          "fontStyle": "bold"
+                      }
+                  },
+                  {
+                      "name": "Change font weight operators ",
+                      "scope": "keyword.operator.logical.python",
+                      "settings": {
+                          "fontStyle": "bold"
+                      }
+                  },
+                  {
+                      "name": "Change colors constants (upercase)",
+                      "scope": "variable.other.constant",
+                      "settings": {
+                          "foreground": "#ff7700",
+                          "fontStyle": "bold"
+                      }
+                  },
+                  {
+                      "name": "Change colors definided functions",
+                      "scope": "entity.name.function.member",
+                      "settings": {
+                          "foreground": "#B9BB47",
+                          "fontStyle": "bold"
+                      }
+                  },
+                  {
+                      "name": "Change colors definided classes",
+                      "scope": "entity.name.type.class",
+                      "settings": {
+                          "foreground": "#99BE83",
+                          "fontStyle": "bold"
+                      }
+                  },
+                  {
+                      "name": "Change font width lambda",
+                      "scope": "storage.type.function.inline.python",
+                      "settings": {
+                          "fontStyle": "bold"
+                      }
+                  },
+                  {
+                      "name": "Change colors functions",
+                      "scope": "entity.name.function",
+                      "settings": {
+                          "foreground": "#B9BB47",
+                          "fontStyle": "bold"
+                      }
+                  },
+              ]
+          }
+      },
+      "window.titleBarStyle": "custom",
+      "python.defaultInterpreterPath": "/Users/zavden/Manim/ManimLibs/venv",
+      "git.openRepositoryInParentFolders": "never",
+      "jupyter.askForKernelRestart": false,
+      "editor.wordWrap": "on",
+      "hediet.vscode-drawio.resizeImages": null,
+      "workbench.colorTheme": "Eva Dark Bold",
+      "workbench.colorCustomizations": {
+          "editorBracketHighlight.foreground1": "#e37779",
+          "editorBracketHighlight.foreground2": "#ffc979"
+      },
+      "codesnap.showLineNumbers": false,
+      "codesnap.containerPadding": "0em",
+      "terminal.integrated.fontFamily": "MesloLGSDZ Nerd Font",
+      "terminal.integrated.fontSize": 19,
+      "workbench.activityBar.location": "hidden",
+    "window.zoomLevel": 2,
+    "redhat.telemetry.enabled": true,
+    "markdown.preview.fontSize": 18,
+    "notebook.editorOptionsCustomizations": {
+        "editor.tabSize": 2,
+        "editor.indentSize": 2,
+        "editor.insertSpaces": true
+    },
+    "codesnap.transparentBackground": true
+  }
+  
