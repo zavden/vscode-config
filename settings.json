@@ -53,6 +53,8 @@
         "before": ["<leader>","x"],
         "commands": [":q"]
       },
+      {"before": ["L"], "commands": ["workbench.action.nextEditor"]},
+      {"before": ["H"], "commands": ["workbench.action.previousEditor"]},
     ],
     "vim.leader": "<space>",
     "vim.handleKeys": {
